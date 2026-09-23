@@ -123,7 +123,7 @@
             // lblDescripcion
             // 
             lblDescripcion.AutoSize = true;
-            lblDescripcion.Location = new Point(140, 102);
+            lblDescripcion.Location = new Point(255, 102);
             lblDescripcion.Name = "lblDescripcion";
             lblDescripcion.Size = new Size(69, 15);
             lblDescripcion.TabIndex = 7;
@@ -132,7 +132,7 @@
             // lblPrecio
             // 
             lblPrecio.AutoSize = true;
-            lblPrecio.Location = new Point(261, 102);
+            lblPrecio.Location = new Point(147, 102);
             lblPrecio.Name = "lblPrecio";
             lblPrecio.Size = new Size(40, 15);
             lblPrecio.TabIndex = 8;
@@ -140,14 +140,15 @@
             // 
             // txtDescripcion
             // 
-            txtDescripcion.Location = new Point(140, 127);
+            txtDescripcion.Location = new Point(255, 127);
             txtDescripcion.Name = "txtDescripcion";
             txtDescripcion.Size = new Size(100, 23);
             txtDescripcion.TabIndex = 9;
+            txtDescripcion.TextChanged += txtDescripcion_TextChanged;
             // 
             // txtPrecio
             // 
-            txtPrecio.Location = new Point(261, 127);
+            txtPrecio.Location = new Point(147, 127);
             txtPrecio.Name = "txtPrecio";
             txtPrecio.Size = new Size(82, 23);
             txtPrecio.TabIndex = 10;
@@ -188,6 +189,7 @@
             txtResultados.ScrollBars = ScrollBars.Vertical;
             txtResultados.Size = new Size(375, 61);
             txtResultados.TabIndex = 19;
+            txtResultados.TextChanged += txtResultados_TextChanged;
             // 
             // btnConsultar
             // 
@@ -277,6 +279,7 @@
             gbCarga.TabIndex = 15;
             gbCarga.TabStop = false;
             gbCarga.Text = "Carga";
+            gbCarga.Enter += gbCarga_Enter;
             // 
             // frmPrincipal
             // 
