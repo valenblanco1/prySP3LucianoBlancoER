@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             cmbMarca = new ComboBox();
             rbNacional = new RadioButton();
             rbImportado = new RadioButton();
@@ -153,7 +154,7 @@
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(6, 164);
+            btnGuardar.Location = new Point(292, 164);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(91, 30);
             btnGuardar.TabIndex = 11;
@@ -173,14 +174,14 @@
             gbconsulta.Controls.Add(rbFiltroNacional);
             gbconsulta.Location = new Point(12, 213);
             gbconsulta.Name = "gbconsulta";
-            gbconsulta.Size = new Size(419, 298);
+            gbconsulta.Size = new Size(419, 206);
             gbconsulta.TabIndex = 12;
             gbconsulta.TabStop = false;
             gbconsulta.Text = "Consulta";
             // 
             // txtResultados
             // 
-            txtResultados.Location = new Point(8, 192);
+            txtResultados.Location = new Point(9, 137);
             txtResultados.Multiline = true;
             txtResultados.Name = "txtResultados";
             txtResultados.ReadOnly = true;
@@ -190,7 +191,7 @@
             // 
             // btnConsultar
             // 
-            btnConsultar.Location = new Point(8, 112);
+            btnConsultar.Location = new Point(278, 101);
             btnConsultar.Name = "btnConsultar";
             btnConsultar.Size = new Size(105, 30);
             btnConsultar.TabIndex = 18;
@@ -201,7 +202,7 @@
             // lblResultados
             // 
             lblResultados.AutoSize = true;
-            lblResultados.Location = new Point(6, 162);
+            lblResultados.Location = new Point(9, 116);
             lblResultados.Name = "lblResultados";
             lblResultados.Size = new Size(64, 15);
             lblResultados.TabIndex = 14;
@@ -281,11 +282,13 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(456, 574);
+            ClientSize = new Size(439, 447);
             Controls.Add(gbCarga);
             Controls.Add(gbconsulta);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmPrincipal";
-            Text = "frmPrincipal";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Repuestos";
             gbconsulta.ResumeLayout(false);
             gbconsulta.PerformLayout();
             gbCarga.ResumeLayout(false);
